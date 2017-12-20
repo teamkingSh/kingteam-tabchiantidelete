@@ -1,7 +1,7 @@
 redis = (loadfile "Data/redis.lua")()
 redis = redis.connect('127.0.0.1', 6379)
-channel_id = -1001135894458
-channel_user = "@BG_TeaM"
+channel_id = -1001107404448
+channel_user = "@teamking_sh"
 local forcejointxt = {'عزیزم اول تو کانالم عضو شو بعد بیا بحرفیم😃❤️\nآیدی کانالم :\n'..channel_user,'عه هنوز تو کانالم نیستی🙁\nاول بیا کانالم بعد بیا چت کنیم😍❤️\nآیدی کانالم :\n'..channel_user,'عشقم اول بیا کانالم بعد بیا پی وی حرف بزنیم☺️\nاومدی بگو 😃❤️\nآیدی کانالم :\n'..channel_user}
 local forcejoin = forcejointxt[math.random(#forcejointxt)]
 local BOT = 2
