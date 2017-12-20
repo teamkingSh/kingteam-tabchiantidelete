@@ -7,13 +7,13 @@ local URL = require "socket.url"
 local https = require "ssl.https"
 local serpent = require "serpent"
 local json = (loadfile "Data/JSON.lua")()
-local token = '436033097:AAHfPD5afBVYOdJPalJ4GXua1_h7A4fCxTk' --token
+local token = '495873521:AAGUxeh_-ukkoSZxPa5lPNTygfZVBFAnPNQ' --token
 local url = 'https://api.telegram.org/bot' .. token
 local offset = 0
 local redis = require('redis')
 local redis = redis.connect('127.0.0.1', 6379)
-local botcli = 460139006
-local SUDO = 304933903
+local botcli = 498973062
+local SUDO = 331807898
 local BOT = 1
 local BOT2 = 2
 local BOT3 = 3
@@ -233,7 +233,7 @@ local function run()
                    {text = '> Back', callback_data = 'firstmenu1:'..chat}
 				}
 							}
-             local text = '•[⇩راهنمای دستورات⇩]•\n➖➖➖➖➖➖\n• reload contacts\n• بازنگری مخاطبین\n••• برای شمارش دقیق مخاطبین از این دستور استفاده نمایید.\n➖➖➖➖➖➖\n• modset USERID\n• افزودن ادمین\n••• به جای USERID آیدی عددی کاربر مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• moddem USERID\n• حذف ادمین\n••• به جای USERID آیدی عددی کاربر مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• link list\n• دریافت لیست لینک های ربات\n➖➖➖➖➖➖\n• fwd users\n• فروارد پیام به کاربران (با ریپلی)\n➖➖➖➖➖➖\n• fwd groups\n• فروارد پیام به گروه ها (با ریپلی)\n➖➖➖➖➖➖\n• fwd sgroups\n• فروارد پیام به سوپرگروه ها (با ریپلی)\n➖➖➖➖➖➖\n• fwd all\n• فروارد پیام به همه (کاربران،گروه ها،سوپرگروه ها)،(با ریپلی)\n➖➖➖➖➖➖\n• on\n• اطلاع از آنلاین بودن ربات\n➖➖➖➖➖➖\n• addall USERID\n• افزودن کاربر مورد نظر به تمامیه گروه ها\n••• به جای USERID آیدی عددی کاربر مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• addcontacts\n• افزودن مخاطبان در گروه\n➖➖➖➖➖➖\n• reload stats\n• ریست کردن امار ربات\n➖➖➖➖➖➖\n• echo TEXT\n• تکرار کردن متن\n••• به جای TEXT متن مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• bc TEXT\n• ارسال متن به تمامیه سوپرگروه ها\n••• به جای TEXT متن مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• setname "FIRST" LAST\n• تنظیم نام\n••• به جای FIRST اسم و بجای LAST فامیل موردنظرتان را قرار دهید .\n➖➖➖➖➖➖\n• setusername USERNAME\n• تنظیم نام کاربری\n••• به جای USERNAME نام کاربری مورد نظرتان را بدون @ قرار دهید .\n➖➖➖➖➖➖\n• delusername\n• حذف نام کاربری\n➖➖➖➖➖➖\n▪ از انتشار این سورس به هیچ وجه راضی نمیباشیم ...\n▪▪ نوشته شده توسط :\n▪▪ [Bibak](https://t.me/bannedbylife)\n▪▪▪ کانال :\n▪▪▪ [BG TeaM](https://t.me/BG_TeaM)'
+             local text = '•[⇩راهنمای دستورات⇩]•\n➖➖➖➖➖➖\n• reload contacts\n• بازنگری مخاطبین\n••• برای شمارش دقیق مخاطبین از این دستور استفاده نمایید.\n➖➖➖➖➖➖\n• modset USERID\n• افزودن ادمین\n••• به جای USERID آیدی عددی کاربر مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• moddem USERID\n• حذف ادمین\n••• به جای USERID آیدی عددی کاربر مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• link list\n• دریافت لیست لینک های ربات\n➖➖➖➖➖➖\n• fwd users\n• فروارد پیام به کاربران (با ریپلی)\n➖➖➖➖➖➖\n• fwd groups\n• فروارد پیام به گروه ها (با ریپلی)\n➖➖➖➖➖➖\n• fwd sgroups\n• فروارد پیام به سوپرگروه ها (با ریپلی)\n➖➖➖➖➖➖\n• fwd all\n• فروارد پیام به همه (کاربران،گروه ها،سوپرگروه ها)،(با ریپلی)\n➖➖➖➖➖➖\n• on\n• اطلاع از آنلاین بودن ربات\n➖➖➖➖➖➖\n• addall USERID\n• افزودن کاربر مورد نظر به تمامیه گروه ها\n••• به جای USERID آیدی عددی کاربر مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• addcontacts\n• افزودن مخاطبان در گروه\n➖➖➖➖➖➖\n• reload stats\n• ریست کردن امار ربات\n➖➖➖➖➖➖\n• echo TEXT\n• تکرار کردن متن\n••• به جای TEXT متن مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• bc TEXT\n• ارسال متن به تمامیه سوپرگروه ها\n••• به جای TEXT متن مورد نظر را قرار دهید .\n➖➖➖➖➖➖\n• setname "FIRST" LAST\n• تنظیم نام\n••• به جای FIRST اسم و بجای LAST فامیل موردنظرتان را قرار دهید .\n➖➖➖➖➖➖\n• setusername USERNAME\n• تنظیم نام کاربری\n••• به جای USERNAME نام کاربری مورد نظرتان را بدون @ قرار دهید .\n➖➖➖➖➖➖\n• delusername\n• حذف نام کاربری\n➖➖➖➖➖➖\n▪ از انتشار این سورس به هیچ وجه راضی نمیباشیم ...\n▪▪ نوشته شده توسط :\n▪▪ [KING Team](https://t.me/the_king_team_creator)\n▪▪▪ کانال :\n▪▪▪ [KingTeam](https://t.me/teamking_sh)'
  edit(q.inline_message_id,""..text.."",keyboard)
             end
 --------Info-------#Bibak
